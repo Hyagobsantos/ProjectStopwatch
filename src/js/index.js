@@ -16,6 +16,8 @@ $('.button__confirm').click(function (e) {
 
   var result = `${data} ${hora}`;
 
+  localStorage.setItem('objteste', JSON.stringify(result));
+
 
   $('[data-countdown]').each(function() {
     var $this = $(this), finalDate = result;
