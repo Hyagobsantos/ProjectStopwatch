@@ -24,8 +24,6 @@ $('.button__confirm').click(function (e) {
       $this.text(event.strftime('%D dias, %H horas, %M minutos e %S segundos'));
     });
   });
-  
-
 
 });
 
