@@ -20,7 +20,7 @@ $('.button__confirm').click(function (e) {
 
 
   $('[data-countdown]').each(function() {
-    var $this = $(this), finalDate = result;
+    var $this = $(this), finalDate = localStorage.getItem('objteste');
     console.log(finalDate)
     $this.countdown(finalDate, function(event) {
       $this.text(event.strftime('%D dias, %H horas, %M minutos e %S segundos'));
