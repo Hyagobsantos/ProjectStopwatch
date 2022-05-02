@@ -4,13 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/jquery-3.6.0.min.js" defer></script>
-    <script src="js/exemplos.js" defer></script>
+    <meta data-rh="true" property="og:image:type" content="image/png"/>
+    <meta data-rh="true" property="search:url" content="/"/>
+    <meta name="theme-color" content="#000000">
+
+    <link data-rh="true" rel="shortcut icon" href="../images/android-icon-192x192.png" type="image/x-icon"/> 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:regular,700" rel="stylesheet" />
+
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <script src="../js/jquery.countdown.min.js" charset="utf-8" defer></script>
+    <script src="../js/index.js" defer></script>
+
     <title>ProjectStopwatch</title>
 </head>
 <body>
+    <nav class="nav__main">
+        <img src="../images/apple-icon-120x120.png" alt="logo">
+        <div class="div__nav">
+            <button class="button__definir style__default" type="button">Set</button>
+            <button class="button__reset style__default" type="button">Reset</button>
+        </div>
+    </nav>
+    <div class="div__modal hide__modal">
+        <h1>Set end time</h1>
+        <div class="div__data">
+            <label for="data_final">Set Final Date</label>
+            <input type="date" name="data_final" id="data_final" class="sets">
+            
+            <label for="hora_final">Set Hour Date</label>
+            <input type="time" name="hora_final" id="hora_final" class="sets">
+            
+            <div class="div__botoes">
+                <button class="style__default button__confirm">Confirm</button>
+                <button class="style__default button__cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+        
     <div class="div__main">
-        <h1 class="h1__contagem">Contagem Regressiva: 00:00:00:00</h1>
+        <h1 class="h1__contagem ">Countdown: <span class="set_data" data-countdown=""></span></h1>
     </div>
 </body>
 </html>
